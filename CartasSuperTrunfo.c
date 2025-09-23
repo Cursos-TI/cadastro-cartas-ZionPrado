@@ -12,10 +12,49 @@ int main() {
   // Área para exibição dos dados da cidade
 
   char Cidade [50];
+  char Estado;
+  char Codigo [5];
+  int populacao;
+  int pontos;
+  float PIB;
+  float Area;
+  
 
   printf("Digite sua Cidade: \n");
-  fgets(Cidade, 50, stdin);
-  printf("Cidade: %s\n\n", Cidade);
+  fgets(Cidade, 50, stdin);// Entrar com Nome Composto Ex. Rio de Janeiro!
+
+
+
+  printf("Digite o Estado:\n");
+  scanf("%c",&Estado);
+
+  printf("Digite o Codigo coma Letra do seu Estado de 01 a 04:\n");
+  scanf("%s", &Codigo);
+
+  printf("Digite a População: \n");
+  scanf("%d", &populacao);
+
+  printf("Digite a Área em Km²: \n");
+  scanf("%f", &Area);
+
+  printf("Digite o PIB: \n");
+  scanf("%f", &PIB);
+
+  printf("Digite a quantidade Pontos Turísticos: \n");
+  scanf("%d", &pontos);
+
+
+  printf(" Carta 1:\n");
+  printf(" Estado: %c\n Código: %s\n Cidade: %s População: %d\n", Estado, Codigo, Cidade, populacao);
+  printf(" Área: %f\n PIB: %f\n Pontos Turísticos: %d\n", Area, PIB, pontos);
+
+
+
+
+
+
+
+
 
 return 0;
 } 
