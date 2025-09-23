@@ -11,5 +11,11 @@ int main() {
 
   // Área para exibição dos dados da cidade
 
+  char Cidade [50];
+
+  printf("Digite sua Cidade: \n");
+  fgets(Cidade, 50, stdin);
+  printf("Cidade: %s\n\n", Cidade);
+
 return 0;
 } 
