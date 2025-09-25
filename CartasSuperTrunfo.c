@@ -43,11 +43,18 @@ int main() {
   printf("Digite a quantidade Pontos Turísticos: \n");
   scanf("%d", &pontos);
 
+  float densidade;
+  float percapita;
+
+  densidade = ( float ) populacao / Area;
+  percapita = ( float ) PIB / populacao;
+
 
   printf(" Carta 1:\n");
   printf(" Estado: %c\n Código: %s\n Cidade: %s População: %d\n", Estado, Codigo, Cidade, populacao);
   printf(" Área: %f\n PIB: %f\n Pontos Turísticos: %d\n", Area, PIB, pontos);
-
+  printf(" Densidade populacional: %.2f\n", densidade);
+  printf(" PIB per Capita: %.2f\n", percapita);
 
 
 
