@@ -25,10 +25,10 @@ int main() {
 
 
 
-  printf("Digite o Estado:\n");
+  printf("Digite a letra do Estado:\n");
   scanf("%c",&Estado);
 
-  printf("Digite o Codigo coma Letra do seu Estado de 01 a 04:\n");
+  printf("Digite o Codigo coma Letra do seu Estado de 01 a 04 (Ex:A01):\n");
   scanf("%s", &Codigo);
 
   printf("Digite a População: \n");
