@@ -135,17 +135,50 @@ int main() {
   resultpoder = super > super2;
 
 
-  printf("População: %d\n", resultpop);
-  if (populacao>populacao2);
-  printf("%s Vence ", Carta1);
-  elseif(populacao<populacao2);
-  printf("%s Vence", Carta2);
-  /*printf("População: %d\n", resultArea);
-  printf("População: %d\n", resultPIB);
-  printf("População: %d\n", resultPT);
-  printf("População: %d\n", resultden);
-  printf("População: %d\n", resultper);
-  printf("População: %d\n", resultpoder);*/
+  
+  if (populacao>populacao2) 
+  printf("População: %s Vence \n", Carta1);
+  else if (populacao2>populacao)
+  printf("População: %s Vence\n", Carta2);
+
+  if (Area>Area2) 
+  printf("Área: %s Vence \n", Carta1);
+  else if (Area2>Area)
+  printf("Área: %s Vence\n", Carta2);
+
+
+  if (PIB>PIB2) 
+  printf("PIB: %s Vence \n", Carta1);
+  else if (PIB2>PIB)
+  printf("PIB: %s Vence\n", Carta2);
+
+
+  if (pontos>pontos2) 
+  printf("Pontos Turísticos: %s Vence \n", Carta1);
+  else if (pontos2>pontos)
+  printf("Pontos Turísticos: %s Vence\n", Carta2);
+
+
+  if (densidade<densidade2) 
+  printf("Densidade Populacional: %s Vence \n", Carta1);
+  else if (densidade2<densidade)
+  printf("Densidade Populacional: %s Vence\n", Carta2);
+
+
+  if (percapita>percapita2) 
+  printf("PIB percapita: %s Vence \n", Carta1);
+  else if (percapita2>percapita)
+  printf("PIB percapita: %s Vence\n", Carta2);
+
+
+  if (super>super2) 
+  printf("Super Poder: %s Vence \n", Carta1);
+  else if (super2>super)
+  printf("Super Poder: %s Vence\n\n\n\n\n", Carta2);
+
+
+  printf("               FIM DE JOGO                  ");
+  
 
 
 
