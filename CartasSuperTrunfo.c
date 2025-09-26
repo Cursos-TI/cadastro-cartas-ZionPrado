@@ -15,7 +15,7 @@ int main() {
 
   char Cidade [50];
   char Estado;
-  char Codigo [5];
+  char Codigo [10];
   int populacao;
   int pontos;
   float PIB;
@@ -31,7 +31,7 @@ int main() {
   scanf("%c",&Estado);
 
   printf("Digite o Codigo coma Letra do seu Estado de 01 a 04 (Ex:A01):\n");
-  scanf("%s", &Codigo);
+  scanf("%s", Codigo);
 
   printf("Digite a População: \n");
   scanf("%d", &populacao);
@@ -75,13 +75,13 @@ int main() {
   float Area2;
   
   printf("Digite sua Cidade: \n");
-  scanf("%s", &Cidade2);// Entrar com Nome Composto Ex. Rio de Janeiro!
+  scanf("%s", Cidade2);// Entrar com Nome Composto Ex. Rio de Janeiro!
 
   printf("Digite a letra do Estado: \n");
   scanf("%s", &estado2);
 
   printf("Digite a letra do estado e o codigo (Ex: A01):\n");
-  scanf("%s", &Codigo2);
+  scanf("%s", Codigo2);
 
   printf("Digite a População: \n");
   scanf("%d", &populacao2);
@@ -95,7 +95,7 @@ int main() {
   printf("Digite a quantidade Pontos Turísticos: \n");
   scanf("%d", &pontos2);
 
-   float densidade2;
+  float densidade2;
   float percapita2;
 
   densidade2 = ( float ) populacao2 / Area2;
@@ -112,6 +112,50 @@ int main() {
   super2 = populacao2 + pontos2 + PIB2 + Area2 + percapita2 + 1/densidade2;
 
   printf(" Super poder: %.2f\n\n\n\n\n", super2);
+
+
+  printf("Comparação de Cartas:\n\n");
+
+  int resultpop;
+  int resultArea;
+  int resultPIB;
+  int resultPT;
+  int resultden;
+  int resultper;
+  int resultpoder;
+  char Carta1 [20]= "Carta 1";
+  char Carta2 [20]= "Carta 2";
+
+  resultpop = populacao > populacao2;
+  resultArea = Area > Area2;
+  resultPIB = PIB > PIB2;
+  resultPT = pontos > pontos2;
+  resultden = densidade > densidade2;
+  resultper = percapita > percapita2;
+  resultpoder = super > super2;
+
+
+  printf("População: %d\n", resultpop);
+  if (populacao>populacao2);
+  printf("%s Vence ", Carta1);
+  elseif(populacao<populacao2);
+  printf("%s Vence", Carta2);
+  /*printf("População: %d\n", resultArea);
+  printf("População: %d\n", resultPIB);
+  printf("População: %d\n", resultPT);
+  printf("População: %d\n", resultden);
+  printf("População: %d\n", resultper);
+  printf("População: %d\n", resultpoder);*/
+
+
+
+
+
+
+  
+
+  
+
 
 
 
