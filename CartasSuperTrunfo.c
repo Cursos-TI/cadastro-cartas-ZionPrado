@@ -10,6 +10,8 @@ int main() {
   // Área para entrada de dados
 
   // Área para exibição dos dados da cidade
+  printf("Primeira Carta: \n\n\n");
+
 
   char Cidade [50];
   char Estado;
@@ -60,9 +62,9 @@ int main() {
    
   super = populacao + pontos + PIB + Area + percapita + 1/densidade;
 
-  printf(" Super poder: %.2f\n\n\n\n\n", super);    
+  printf(" Super poder: %.2f\n\n\n", super);    
 
-
+  printf("Segunda Carta:\n\n\n");
 
   char Cidade2 [60];
   char estado2;
@@ -75,10 +77,10 @@ int main() {
   printf("Digite sua Cidade: \n");
   scanf("%s", &Cidade2);// Entrar com Nome Composto Ex. Rio de Janeiro!
 
-  printf("Digite a letra do Estado:\n");
-  scanf("%s", &estado2)
+  printf("Digite a letra do Estado: \n");
+  scanf("%s", &estado2);
 
-  printf("Digite o Codigo coma Letra do seu Estado de 01 a 04 (Ex:A01):\n");
+  printf("Digite a letra do estado e o codigo (Ex: A01):\n");
   scanf("%s", &Codigo2);
 
   printf("Digite a População: \n");
@@ -100,12 +102,16 @@ int main() {
   percapita2 = ( float ) PIB2 / populacao2;
 
   printf(" Carta 2:\n");
-  printf(" Estado: %c\n Código: %s\n Cidade: %s População: %d\n", estado2, Codigo2, Cidade2, populacao2);
+  printf(" Estado: %c\n Código: %s\n Cidade: %s\n População: %d\n", estado2, Codigo2, Cidade2, populacao2);
   printf(" Área: %f\n PIB: %f\n Pontos Turísticos: %d\n", Area2, PIB2, pontos2);
   printf(" Densidade populacional: %.2f\n", densidade2);
   printf(" PIB per Capita: %.2f\n", percapita2);
 
+  float super2;
+   
+  super2 = populacao2 + pontos2 + PIB2 + Area2 + percapita2 + 1/densidade2;
 
+  printf(" Super poder: %.2f\n\n\n\n\n", super2);
 
 
 
